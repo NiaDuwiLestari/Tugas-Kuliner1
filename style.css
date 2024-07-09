@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index: 1;
+}
+
+header .logo a {
+    font-size: 30px;
+    color: aliceblue;
+    padding: 15px 30px;
+}
+
+header .logo a span {
+    color: orange;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li a{
+    margin: 5px 20px;
+    font-size: 18px;
+    color: aliceblue;
+    padding: 10px 10px;
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.2s ease-in;
+}
+
+header nav ul li a:hover{
+    border-bottom: 2px solid aliceblue;
+}
+
+/* Content */
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgba(0,0,0,.7), rgba(0, 0, 0, .7)), url("kota binjai.jpg");
+    background-position: center bottom;
+    background-size: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.content h1{
+    font-size: 35px;
+    padding: 5px;
+    color: aliceblue;
+}
+
+.content p{
+    font-size: 17px;
+    color: aliceblue;
+}
+
+/* Menu */
+
+.menu{
+    background-color: #333333;
+    width: 100%;
+}
+
+.menu .menu-header{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-header h3{
+    color: coral;
+    padding: 10px 30px;
+}
+
+.menu-header h4{
+    color: coral;
+    padding: 10px 20px;
+}
+
+.menu .menu-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    background-color: #404040;
+}
+
+.menu .menu-content .ifumie, 
+.mie-sop, 
+.tahu-kua-heci{
+    width: 250px;
+}
+
+.menu .menu-content .ifumie .ifumie-image img{
+    border-radius: 50%;
+}
+
+.menu .menu-content .mie-sop .mie-sop-image img{
+    border-radius: 50%;
+}
+
+.menu .menu-content .tahu-kua-heci .tahu-kua-heci-image img{
+    border-radius: 50%;
+}
+
+.menu .menu-content .ifumie-body,
+.mie-sop-body,
+.tahu-kua-heci-body{
+    text-align: left;
+    margin-top: 10px;
+}
+
+.menu .menu-content .ifumie-body h2,
+.mie-sop-body h2,
+.tahu-kua-heci-body h2{
+    color: coral;
+}
+
+.menu .menu-content .ifumie-body label,
+.mie-sop-body label,
+.tahu-kua-heci-body label{
+    margin-top: 5px;
+    color: aliceblue;
+    text-align: justify;
+
+}
+
+/* Order */
+
+h1{
+    text-align: center;
+    color:coral;
+    padding: 20px;
+}
+  .Order{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+  }
+
+  .item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+
+  .item img:hover{
+    transform: scale(1.04);
+  }
+
+  .item h4{
+    padding: 5px;
+    text-align: center;
+  }
+
+  .item button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: forestgreen;
+    color: aliceblue;
+    border-radius: 5px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+  }
+
+  .item button:hover{
+    transform: scale(1.08);
+    transition: all .5s ease;
+    background-color: red;
+    box-shadow: 0px 21px 53px black( 46, 46, 46, 0.66);
+  }
+  @media screen and (max-width: 1000px){
+    .Order{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (max-width: 768px){
+    .Order{
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  /* Contact */
+  .contact{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-top: 2px solid black;
+  }
+
+  .contact .contact-box{
+    flex: 1;
+  }
+
+  .contact .contact-box .contact-image,
+  .contact .contact-box .contact-body{
+    height: 100%;
+  }
+  
+  .contact img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact-image img{
+    opacity: .9;
+  }
+
+  .contact-body{
+    background-color: #404040;
+    height: 100%;
+    border-left: 2px solid #333333;
+}
+
+.contact-body form{
+    padding: 50px 40px;
+    box-sizing: border-box;
+}
+
+.contact-body h2 {
+    color: orange;
+}
+
+form .form-content{
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid lightgrey;
+}
+
+form .form-content input{
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
+    font-size: 17px;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+}
+
+form .form-content label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: gray;
+    transform: translateY(-50%);
+    font-size: 17px;
+    transition: .5s;
+    pointer-events: none;
+}
+
+form .form-content span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: orange;
+    transform: .4s;
+}
+
+form .form-content input:focus~label,
+form .form-content input:valid~label{
+    top: -5px;
+    color: orange
+}
+
+form .form-content input:focus~span::before,
+form .form-content input:valid~span::before{
+    width: 100%;
+}
+
+.contact-body form button{
+    padding: 10px 20px;
+    font-size: 17px;
+    border: none;
+    background-color: #ff6600;
+    color: white;
+    border: 5px;
+    cursor: pointer;
+    transition: all .4s ease-in;
+    border-radius: 10px;
+}
+
+.contact-body form button:hover{
+    background-color: #ff6681;
+}
